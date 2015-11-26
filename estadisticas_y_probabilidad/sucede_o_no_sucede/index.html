@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Atardecer en el Parque - PORTADA</title>
+  <style type="text/css">
+    .container, .portada, .cuadro{
+      height: 100%;
+      width: 100%;
+      position: absolute;
+      overflow:hidden;
+    }
+    .portada{
+      background: url(img/portada-01.png) no-repeat center center fixed;
+      background-size: cover;
+    }
+    .main-title{
+      font-size: 800%;
+      text-align: center;
+    }
+    .main-title, .title{
+      font-family: sans-serif;
+      margin-top: 50px;
+      font-weight: bold;
+    }
+    .title{
+      font-size: 300%;
+      margin-left: 30px;
+    }
+    .hidden{
+      visibility: hidden;
+    }
+    #cuadro-content{
+      width:100%;
+      height:80%;
+      position: absolute;
+    }
+    #cuadro-content div{
+      position:absolute;
+      bottom: 0px;
+    }
+    .grad{
+      background: -webkit-linear-gradient(left, rgb(180, 193, 240) , white); /* For Safari 5.1 to 6.0 */
+      background: -o-linear-gradient(right, rgb(180, 193, 240), white); /* For Opera 11.1 to 12.0 */
+      background: -moz-linear-gradient(right, rgb(180, 193, 240), white); /* For Firefox 3.6 to 15 */
+      background: linear-gradient(to right, rgb(180, 193, 240) , white); /* Standard syntax (must be last) */
+    }
+
+  </style>
+</head>
+<body style="margin: 0">
+  <div class="container grad">
+    <!-- onclick="javascript:location.href='actividad1.html'; -->
+    <div class="portada" onclick="setHidden(this); unHide('.cuadro')">
+      <div class="main-title" style="color: white">
+        <div>ATARDECER</div>
+        <div>EN EL PARQUE</div>
+      </div>
+    </div>
+    
+    <div class="cuadro hidden">
+      <div class="title" >
+        INTRODUCCIÓN
+        <div id="cuadro-content" onclick="javascript:location.href='actividad1.html';">
+          <div>
+            <img src="img/gota.png" alt="gota poda red matematica" height="auto" width="25%">
+            <img src="img/cuadro.png" alt="poda cuadro estadistica" height="auto" width="73%">
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</body>
+<script type="text/javascript" src="js/main.js"></script>
+<script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+</html>
