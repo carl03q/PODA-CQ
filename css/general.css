@@ -12,14 +12,20 @@
   font-size: 800%;
   text-align: center;
 }
-.main-title, .title{
+.main-title, .title-300, .title-450{
   font-family: sans-serif;
   margin-top: 50px;
   font-weight: bold;
 }
-.title{
-  font-size: 300%;
+.title-300, .title-450{
   margin-left: 30px;
+  position: absolute;
+}
+.title-300{
+  font-size: 300%;
+}
+.title-450{
+  font-size: 450%;
 }
 .hidden{
   visibility: hidden;
@@ -34,9 +40,15 @@
   bottom: 0px;
 }
 
-.grad{
+.grad-gray{
   background: -webkit-linear-gradient(left, rgb(180, 193, 240) , white); /* For Safari 5.1 to 6.0 */
   background: -o-linear-gradient(right, rgb(180, 193, 240), white); /* For Opera 11.1 to 12.0 */
   background: -moz-linear-gradient(right, rgb(180, 193, 240), white); /* For Firefox 3.6 to 15 */
   background: linear-gradient(to right, rgb(180, 193, 240) , white); /* Standard syntax (must be last) */
+}
+.grad-brown{
+  background: -webkit-linear-gradient(left, rgb(229, 224, 223) , rgb(182, 166, 165)); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(right, rgb(229, 224, 223) , rgb(182, 166, 165)); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(right, rgb(229, 224, 223) , rgb(182, 166, 165)); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to right, rgb(229, 224, 223) , rgb(182, 166, 165)); /* Standard syntax (must be last) */
 }
